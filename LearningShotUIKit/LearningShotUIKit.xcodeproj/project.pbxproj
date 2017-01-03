@@ -12,6 +12,7 @@
 		7B7977CC1E1C58D9008C77BA /* ShareExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7977CB1E1C58D9008C77BA /* ShareExampleViewController.swift */; };
 		7B7977D21E1C5A8B008C77BA /* UICollectionViewCustonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B7977D11E1C5A8B008C77BA /* UICollectionViewCustonCell.xib */; };
 		7B7977D41E1C5AD6008C77BA /* UICollectionViewCustonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7977D31E1C5AD6008C77BA /* UICollectionViewCustonCell.swift */; };
+		7B7977D61E1C5BA1008C77BA /* UICollectionViewDelegateDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7977D51E1C5BA1008C77BA /* UICollectionViewDelegateDatasource.swift */; };
 		7B941F0F1E1C531100A115A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B941F0E1E1C531100A115A6 /* AppDelegate.swift */; };
 		7B941F141E1C531100A115A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B941F121E1C531100A115A6 /* Main.storyboard */; };
 		7B941F161E1C531100A115A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B941F151E1C531100A115A6 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		7B7977CB1E1C58D9008C77BA /* ShareExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareExampleViewController.swift; sourceTree = "<group>"; };
 		7B7977D11E1C5A8B008C77BA /* UICollectionViewCustonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UICollectionViewCustonCell.xib; sourceTree = "<group>"; };
 		7B7977D31E1C5AD6008C77BA /* UICollectionViewCustonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCustonCell.swift; sourceTree = "<group>"; };
+		7B7977D51E1C5BA1008C77BA /* UICollectionViewDelegateDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewDelegateDatasource.swift; sourceTree = "<group>"; };
 		7B941F0B1E1C531000A115A6 /* LearningShotUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningShotUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B941F0E1E1C531100A115A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B941F131E1C531100A115A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		7B7977D01E1C5A40008C77BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B7977D51E1C5BA1008C77BA /* UICollectionViewDelegateDatasource.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			files = (
 				7B7977D41E1C5AD6008C77BA /* UICollectionViewCustonCell.swift in Sources */,
 				7B7977CA1E1C58BB008C77BA /* DetailExampleViewController.swift in Sources */,
+				7B7977D61E1C5BA1008C77BA /* UICollectionViewDelegateDatasource.swift in Sources */,
 				7B941F0F1E1C531100A115A6 /* AppDelegate.swift in Sources */,
 				7B7977CC1E1C58D9008C77BA /* ShareExampleViewController.swift in Sources */,
 				7B7977C81E1C5897008C77BA /* CollectionExampleViewController.swift in Sources */,
