@@ -66,7 +66,7 @@
         <!--Collection-->
         <scene sceneID="ubn-KC-IeT">
             <objects>
-                <viewController id="TeE-4M-FHQ" sceneMemberID="viewController">
+                <viewController id="TeE-4M-FHQ" customClass="CollectionExampleViewController" customModule="LearningShotUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y36-O2-48A"/>
                         <viewControllerLayoutGuide type="bottom" id="ecH-LS-b9i"/>
@@ -107,7 +107,7 @@
         <!--Navigation Push-->
         <scene sceneID="7ag-pH-olb">
             <objects>
-                <viewController id="lOH-C1-umC" sceneMemberID="viewController">
+                <viewController id="lOH-C1-umC" customClass="DetailExampleViewController" customModule="LearningShotUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1dF-Wq-r4w"/>
                         <viewControllerLayoutGuide type="bottom" id="Uhv-rf-eVV"/>
@@ -129,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="2074" y="-343"/>
         </scene>
-        <!--View Controller-->
+        <!--Share Example View Controller-->
         <scene sceneID="xCc-yx-Z7f">
             <objects>
-                <viewController id="jvZ-Rm-RAo" sceneMemberID="viewController">
+                <viewController id="jvZ-Rm-RAo" customClass="ShareExampleViewController" customModule="LearningShotUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rgx-3P-9Vp"/>
                         <viewControllerLayoutGuide type="bottom" id="CEo-T9-mNK"/>
