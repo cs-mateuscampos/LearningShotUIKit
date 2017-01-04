@@ -10,10 +10,23 @@ import UIKit
 
 class CollectionExampleViewController: UIViewController {
     
+    // MARK: Outlets
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    // MARK: Properties
+    var uicollectionViewDelegateDatasource: UICollectionViewDelegateDatasource?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.collectionView.register(UICollectionViewCustonCell.self, forCellWithReuseIdentifier: "UICollectionViewCustonCellIdentifier")
+        
+        let object = ObjectFactory.colorsArray(numberOfItems: 102)
+        self.uicollectionViewDelegateDatasource = UICollectionViewDelegateDatasource(data: object)
+        
+        self.collectionView.dataSource = self.uicollectionViewDelegateDatasource
+        self.collectionView.delegate = self.uicollectionViewDelegateDatasource
+        self.collectionView.reloadData()
 
         // Do any additional setup after loading the view.
     }

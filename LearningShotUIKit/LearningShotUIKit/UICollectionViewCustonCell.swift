@@ -10,4 +10,8 @@ import UIKit
 
 class UICollectionViewCustonCell: UICollectionViewCell {
     
+    func setup(color:UIColor) {
+        self.backgroundColor = color
+    }
+    
 }

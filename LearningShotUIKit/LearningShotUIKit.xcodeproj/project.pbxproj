@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B3E54211E1C6DD4001B5601 /* ObjectFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E54201E1C6DD4001B5601 /* ObjectFactory.swift */; };
 		7B7977C81E1C5897008C77BA /* CollectionExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7977C71E1C5897008C77BA /* CollectionExampleViewController.swift */; };
 		7B7977CA1E1C58BB008C77BA /* DetailExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7977C91E1C58BB008C77BA /* DetailExampleViewController.swift */; };
 		7B7977CC1E1C58D9008C77BA /* ShareExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7977CB1E1C58D9008C77BA /* ShareExampleViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B3E54201E1C6DD4001B5601 /* ObjectFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectFactory.swift; sourceTree = "<group>"; };
 		7B7977C71E1C5897008C77BA /* CollectionExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExampleViewController.swift; sourceTree = "<group>"; };
 		7B7977C91E1C58BB008C77BA /* DetailExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailExampleViewController.swift; sourceTree = "<group>"; };
 		7B7977CB1E1C58D9008C77BA /* ShareExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareExampleViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				7B7977D51E1C5BA1008C77BA /* UICollectionViewDelegateDatasource.swift */,
+				7B3E54201E1C6DD4001B5601 /* ObjectFactory.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				7B7977D41E1C5AD6008C77BA /* UICollectionViewCustonCell.swift in Sources */,
 				7B7977CA1E1C58BB008C77BA /* DetailExampleViewController.swift in Sources */,
+				7B3E54211E1C6DD4001B5601 /* ObjectFactory.swift in Sources */,
 				7B7977D61E1C5BA1008C77BA /* UICollectionViewDelegateDatasource.swift in Sources */,
 				7B941F0F1E1C531100A115A6 /* AppDelegate.swift in Sources */,
 				7B7977CC1E1C58D9008C77BA /* ShareExampleViewController.swift in Sources */,
