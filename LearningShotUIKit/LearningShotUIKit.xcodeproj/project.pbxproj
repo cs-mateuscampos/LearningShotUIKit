@@ -20,6 +20,10 @@
 		7B941F191E1C531100A115A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B941F171E1C531100A115A6 /* LaunchScreen.storyboard */; };
 		7B941F241E1C531100A115A6 /* LearningShotUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B941F231E1C531100A115A6 /* LearningShotUIKitTests.swift */; };
 		7B941F2F1E1C531100A115A6 /* LearningShotUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B941F2E1E1C531100A115A6 /* LearningShotUIKitUITests.swift */; };
+		7BC462B41E1D94C300FCF4BF /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC462B31E1D94C300FCF4BF /* MoreViewController.swift */; };
+		7BC462B61E1D95A000FCF4BF /* TextExampleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC462B51E1D95A000FCF4BF /* TextExampleDelegate.swift */; };
+		7BC462B81E1D95E800FCF4BF /* UITextFieldExampleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC462B71E1D95E800FCF4BF /* UITextFieldExampleDelegate.swift */; };
+		7BFA71DF1E1D4DD80077E250 /* CollectionExampleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA71DE1E1D4DD80077E250 /* CollectionExampleDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		7B941F2A1E1C531100A115A6 /* LearningShotUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningShotUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B941F2E1E1C531100A115A6 /* LearningShotUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningShotUIKitUITests.swift; sourceTree = "<group>"; };
 		7B941F301E1C531100A115A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC462B31E1D94C300FCF4BF /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		7BC462B51E1D95A000FCF4BF /* TextExampleDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextExampleDelegate.swift; sourceTree = "<group>"; };
+		7BC462B71E1D95E800FCF4BF /* UITextFieldExampleDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExampleDelegate.swift; sourceTree = "<group>"; };
+		7BFA71DE1E1D4DD80077E250 /* CollectionExampleDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExampleDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 				7B7977C71E1C5897008C77BA /* CollectionExampleViewController.swift */,
 				7B7977C91E1C58BB008C77BA /* DetailExampleViewController.swift */,
 				7B7977CB1E1C58D9008C77BA /* ShareExampleViewController.swift */,
+				7BC462B31E1D94C300FCF4BF /* MoreViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -121,6 +130,9 @@
 			children = (
 				7B7977D51E1C5BA1008C77BA /* UICollectionViewDelegateDatasource.swift */,
 				7B3E54201E1C6DD4001B5601 /* ObjectFactory.swift */,
+				7BFA71DE1E1D4DD80077E250 /* CollectionExampleDelegate.swift */,
+				7BC462B51E1D95A000FCF4BF /* TextExampleDelegate.swift */,
+				7BC462B71E1D95E800FCF4BF /* UITextFieldExampleDelegate.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -313,11 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC462B41E1D94C300FCF4BF /* MoreViewController.swift in Sources */,
 				7B7977D41E1C5AD6008C77BA /* UICollectionViewCustonCell.swift in Sources */,
 				7B7977CA1E1C58BB008C77BA /* DetailExampleViewController.swift in Sources */,
 				7B3E54211E1C6DD4001B5601 /* ObjectFactory.swift in Sources */,
 				7B7977D61E1C5BA1008C77BA /* UICollectionViewDelegateDatasource.swift in Sources */,
 				7B941F0F1E1C531100A115A6 /* AppDelegate.swift in Sources */,
+				7BC462B81E1D95E800FCF4BF /* UITextFieldExampleDelegate.swift in Sources */,
+				7BC462B61E1D95A000FCF4BF /* TextExampleDelegate.swift in Sources */,
+				7BFA71DF1E1D4DD80077E250 /* CollectionExampleDelegate.swift in Sources */,
 				7B7977CC1E1C58D9008C77BA /* ShareExampleViewController.swift in Sources */,
 				7B7977C81E1C5897008C77BA /* CollectionExampleViewController.swift in Sources */,
 			);

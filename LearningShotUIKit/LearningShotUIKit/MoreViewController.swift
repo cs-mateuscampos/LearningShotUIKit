@@ -1,25 +1,29 @@
 //
-//  DetailExampleViewController.swift
+//  MoreViewController.swift
 //  LearningShotUIKit
 //
-//  Created by Mateus de Campos on 03/01/17.
+//  Created by Mateus de Campos on 04/01/17.
 //  Copyright © 2017 Mateus Campos. All rights reserved.
 //
 
 import UIKit
 
-class DetailExampleViewController: UIViewController {
-    
-    var selectedColor: UIColor?
+class MoreViewController: UIViewController, TextFieldProtocol {
 
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
+    
+    var textDelegate: UITextFieldExampleDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        if let color = self.selectedColor {
-            self.view.backgroundColor = color
-        }
+        self.textDelegate = UITextFieldExampleDelegate(textDelegate: self)
+        self.textField.delegate = self.textDelegate
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(closeKeyboard)))
         
     }
 
@@ -28,6 +32,13 @@ class DetailExampleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func closeKeyboard() {
+        self.view.endEditing(true)
+    }
+    
+    func shouldActiveButton(active: Bool) {
+        self.sendButton.isEnabled = active
+    }
 
     /*
     // MARK: - Navigation

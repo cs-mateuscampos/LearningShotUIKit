@@ -11,9 +11,11 @@ import UIKit
 class UICollectionViewDelegateDatasource: NSObject, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var data:Array<AnyObject>?
+    var selectionDelegate: SelectionProtocol?
     
-    init(data:Array<AnyObject>?) {
+    init(data:Array<AnyObject>?, selectionDelegate: SelectionProtocol?) {
         self.data = data
+        self.selectionDelegate = selectionDelegate
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -30,6 +32,12 @@ class UICollectionViewDelegateDatasource: NSObject, UICollectionViewDelegate, UI
             cell?.setup(color: color as! UIColor)
         }
         return cell!
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let color = data?[indexPath.row]{
+            self.selectionDelegate?.didSelectedColor(color: color as! UIColor)
+        }
     }
     
 }

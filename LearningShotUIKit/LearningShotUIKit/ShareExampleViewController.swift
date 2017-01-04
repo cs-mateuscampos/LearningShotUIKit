@@ -9,7 +9,8 @@
 import UIKit
 
 class ShareExampleViewController: UIViewController {
-
+    
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,18 @@ class ShareExampleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: Actions
+    @IBAction func share(_ sender: Any) {
+        self.close()
+    }
+    
+    @IBAction func cancel(_ sender: Any) {
+        self.close()
+    }
+    
+    func close() {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
