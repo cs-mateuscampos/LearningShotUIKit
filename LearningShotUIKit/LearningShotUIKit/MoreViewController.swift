@@ -22,6 +22,7 @@ class MoreViewController: UIViewController, TextFieldProtocol {
         
         self.textDelegate = UITextFieldExampleDelegate(textDelegate: self)
         self.textField.delegate = self.textDelegate
+        self.textField.becomeFirstResponder()
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(closeKeyboard)))
         

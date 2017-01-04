@@ -39,20 +39,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIc-Kd-JEx">
-                                <rect key="frame" x="16" y="580" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Concluir"/>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BaN-V9-qv3">
-                                <rect key="frame" x="16" y="28" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BaN-V9-qv3">
+                                <rect key="frame" x="16" y="28" width="270" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="VVh-1j-L6E"/>
+                                    <constraint firstAttribute="height" constant="30" id="zDT-ss-ekv"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIc-Kd-JEx">
+                                <rect key="frame" x="294" y="28" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ckl-fq-7c3"/>
+                                    <constraint firstAttribute="width" constant="65" id="fuO-dn-Pxz"/>
+                                </constraints>
+                                <state key="normal" title="Concluir"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BaN-V9-qv3" firstAttribute="leading" secondItem="CJe-QD-AcZ" secondAttribute="leading" constant="16" id="5fb-Fg-7dA"/>
+                            <constraint firstItem="WIc-Kd-JEx" firstAttribute="top" secondItem="XCf-Fs-QB8" secondAttribute="bottom" constant="8" id="VK1-XU-h8D"/>
+                            <constraint firstAttribute="trailing" secondItem="WIc-Kd-JEx" secondAttribute="trailing" constant="16" id="nfX-UF-4Vm"/>
+                            <constraint firstItem="WIc-Kd-JEx" firstAttribute="leading" secondItem="BaN-V9-qv3" secondAttribute="trailing" constant="8" id="uis-32-t6j"/>
+                            <constraint firstItem="BaN-V9-qv3" firstAttribute="top" secondItem="XCf-Fs-QB8" secondAttribute="bottom" constant="8" id="yAW-KD-w61"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="5b0-EG-g76"/>
                     <connections>

@@ -19,7 +19,14 @@ class UITextFieldExampleDelegate: NSObject, UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        self.textExampleDelegate?.shouldActiveButton(active: true)
+        let nsStr = textField.text as NSString?
+        let str = nsStr?.replacingCharacters(in: range, with: string)
+
+        if (str?.characters.count)! == 0 {
+            self.textExampleDelegate?.shouldActiveButton(active: false)
+        } else {
+            self.textExampleDelegate?.shouldActiveButton(active: true)
+        }
         
         return true
     }
